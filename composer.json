@@ -1,0 +1,12 @@
+{
+    "name": "hexlet/code",
+    "bin": ["bin/brain-games"],
+    "description": "Hexlet project",
+    "authors": [
+        {
+            "name": "Michail Tarasevic",
+            "email": "tarasevicmichail@gmail.com"
+        }
+    ],
+    "require": {}
+}
