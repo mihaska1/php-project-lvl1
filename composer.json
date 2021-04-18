@@ -1,5 +1,11 @@
 {
     "name": "hexlet/code",
+    "autoload": {
+        "files": [
+            "vendor/autoload.php",
+            "src/Cli.php"
+        ]
+    },
     "bin": ["bin/brain-games"],
     "description": "Hexlet project",
     "authors": [
@@ -8,5 +14,7 @@
             "email": "tarasevicmichail@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.12"
+    }
 }
