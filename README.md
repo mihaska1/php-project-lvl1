@@ -3,4 +3,4 @@
 
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 
-![example workflow](https://github.com/mihaska1/php-project-lvl1/actions/workflows/php.yml/badge.svg)
+[![CI](https://github.com/mihaska1/php-project-lvl1/actions/workflows/Test.yml/badge.svg?branch=main)](https://github.com/mihaska1/php-project-lvl1/actions/workflows/Test.yml)
