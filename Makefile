@@ -13,3 +13,6 @@ lint:
 
 lint-fix:
 	composer run-script phpcbf -- --standard=PSR12 src bin
+
+brain-even:
+	@./bin/brain-even

@@ -6,7 +6,10 @@
             "src/Cli.php"
         ]
     },
-    "bin": ["bin/brain-games"],
+    "bin": [
+        "bin/brain-games",
+        "bin/brain-even"
+    ],
     "description": "Hexlet project",
     "authors": [
         {
