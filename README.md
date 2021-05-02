@@ -4,3 +4,5 @@
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 
 [![CI](https://github.com/mihaska1/php-project-lvl1/actions/workflows/Test.yml/badge.svg?branch=main)](https://github.com/mihaska1/php-project-lvl1/actions/workflows/Test.yml)
+
+<a href="https://asciinema.org/a/JldnjDhanLQL7TMRqUq0QoezF" target="_blank"><img src="https://asciinema.org/a/JldnjDhanLQL7TMRqUq0QoezF.svg" /></a>
