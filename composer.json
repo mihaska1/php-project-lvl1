@@ -3,7 +3,8 @@
     "autoload": {
         "files": [
             "vendor/autoload.php",
-            "src/Cli.php"
+            "src/Cli.php",
+            "src/EvenGame.php"
         ]
     },
     "bin": [
