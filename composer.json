@@ -4,7 +4,8 @@
         "files": [
             "vendor/autoload.php",
             "src/Cli.php",
-            "src/EvenGame.php"
+            "src/EvenGame.php",
+            "src/Engine.php"
         ]
     },
     "bin": [
