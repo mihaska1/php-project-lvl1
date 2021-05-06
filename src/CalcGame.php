@@ -14,15 +14,15 @@ function calcGame()
     $randomOperator = $operator[rand(0, 2)];
     switch ($randomOperator) {
         case "+":
-            $correctAnswer = $rand1 + $rand2;
+            $correctAnswer = strval($rand1 + $rand2);
             $question = "{$rand1} + {$rand2}";
             return GetPlayerAnswer($question, $correctAnswer);
         case "-":
-            $correctAnswer = $rand1 - $rand2;
+            $correctAnswer = strval($rand1 - $rand2);
             $question = "{$rand1} - {$rand2}";
             return GetPlayerAnswer($question, $correctAnswer);
         case "*":
-            $correctAnswer = $rand1 * $rand2;
+            $correctAnswer = strval($rand1 * $rand2);
             $question = "{$rand1} * {$rand2}";
             return GetPlayerAnswer($question, $correctAnswer);
     }

@@ -15,4 +15,4 @@ use function Brain\Games\Engine\gameCycle;
 
 use const Brain\Games\Calcgame\CALC_GAME_RULES;
 
-gameCycle(greeting(),"EvenGame",CALC_GAME_RULES);
+gameCycle(greeting(),"CalcGame",CALC_GAME_RULES);

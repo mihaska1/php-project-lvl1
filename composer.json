@@ -5,12 +5,14 @@
             "vendor/autoload.php",
             "src/Cli.php",
             "src/EvenGame.php",
-            "src/Engine.php"
+            "src/Engine.php",
+            "src/CalcGame.php"
         ]
     },
     "bin": [
         "bin/brain-games",
-        "bin/brain-even"
+        "bin/brain-even",
+        "bin/brain-calc"
     ],
     "description": "Hexlet project",
     "authors": [
