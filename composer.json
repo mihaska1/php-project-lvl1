@@ -4,9 +4,9 @@
         "files": [
             "vendor/autoload.php",
             "src/Cli.php",
-            "src/EvenGame.php",
+            "src/Games/EvenGame.php",
             "src/Engine.php",
-            "src/CalcGame.php"
+            "src/Games/CalcGame.php"
         ]
     },
     "bin": [

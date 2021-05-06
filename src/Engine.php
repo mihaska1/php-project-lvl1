@@ -9,7 +9,7 @@ use function cli\prompt;
 
 const NUMBER_OF_ROUNDS = 3;
 
-function GetPlayerAnswer($question, $correctAnswer)
+function GetPlayerAnswer($question, $correctAnswer): bool
 {
     line("Question: {$question}");
     $answer = prompt("Your answer: ");
@@ -33,7 +33,7 @@ function gameMode($gameMode)
     return 0;
 }
 
-function gameCycle($name, $gameName, $rules)
+function gameCycle($name, $gameName, $rules): bool
 {
     line($rules);
     for ($i = 0; $i < NUMBER_OF_ROUNDS; $i++) {
