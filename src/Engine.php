@@ -2,6 +2,8 @@
 
 namespace Brain\Games\Engine;
 
+use function Brain\Games\CalcGame\calcGame;
+use function Brain\Games\EvenGame\evenGame;
 use function cli\line;
 use function cli\prompt;
 
@@ -18,4 +20,28 @@ function GetPlayerAnswer($question, $correctAnswer)
         line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
         return false;
     }
+}
+
+function gameMode($gameMode)
+{
+    switch ($gameMode) {
+        case "CalcGame":
+            return calcGame();
+        case "EvenGame":
+            return evenGame();
+    }
+    return 0;
+}
+
+function gameCycle($name, $gameName, $rules)
+{
+    line($rules);
+    for ($i = 0; $i < NUMBER_OF_ROUNDS; $i++) {
+        if (!gameMode($gameName)) {
+            line("Let's try again, %s!", $name);
+            return false;
+        }
+    }
+    line("Congratulations, %s!", $name);
+    return true;
 }

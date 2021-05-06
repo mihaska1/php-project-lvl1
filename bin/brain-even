@@ -11,6 +11,8 @@ if (file_exists($autoloadPath1)) {
 }
 
 use function Brain\Games\Cli\greeting;
-use function Brain\Games\EvenGame\parityCheckGame;
+use function Brain\Games\Engine\gameCycle;
 
-parityCheckGame(greeting());
+use const Brain\Games\Evengame\EVEN_GAME_RULES;
+
+gameCycle(greeting(),"EvenGame",EVEN_GAME_RULES);
