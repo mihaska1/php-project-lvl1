@@ -5,6 +5,7 @@ namespace Brain\Games\Engine;
 use function Brain\Games\CalcGame\calcGame;
 use function Brain\Games\EvenGame\evenGame;
 use function Brain\Games\GcdGame\gcdGame;
+use function Brain\Games\ProgressionGame\progressionGame;
 use function cli\line;
 use function cli\prompt;
 
@@ -32,6 +33,8 @@ function gameMode($gameMode)
             return evenGame();
         case "GcdGame":
             return gcdGame();
+        case "ProgressionGame":
+            return progressionGame();
     }
     return 0;
 }
