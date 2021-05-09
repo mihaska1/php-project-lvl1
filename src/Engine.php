@@ -4,12 +4,13 @@ namespace Brain\Games\Engine;
 
 use function Brain\Games\CalcGame\calcGame;
 use function Brain\Games\EvenGame\evenGame;
+use function Brain\Games\GcdGame\gcdGame;
 use function cli\line;
 use function cli\prompt;
 
 const NUMBER_OF_ROUNDS = 3;
 
-function GetPlayerAnswer($question, $correctAnswer): bool
+function getPlayerAnswer($question, $correctAnswer): bool
 {
     line("Question: {$question}");
     $answer = prompt("Your answer: ");
@@ -29,6 +30,8 @@ function gameMode($gameMode)
             return calcGame();
         case "EvenGame":
             return evenGame();
+        case "GcdGame":
+            return gcdGame();
     }
     return 0;
 }

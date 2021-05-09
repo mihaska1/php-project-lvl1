@@ -2,7 +2,7 @@
 
 namespace Brain\Games\CalcGame;
 
-use function Brain\Games\Engine\GetPlayerAnswer;
+use function Brain\Games\Engine\getPlayerAnswer;
 
 const CALC_GAME_RULES = "What is the result of the expression?";
 
@@ -16,15 +16,15 @@ function calcGame()
         case "+":
             $correctAnswer = strval($rand1 + $rand2);
             $question = "{$rand1} + {$rand2}";
-            return GetPlayerAnswer($question, $correctAnswer);
+            return getPlayerAnswer($question, $correctAnswer);
         case "-":
             $correctAnswer = strval($rand1 - $rand2);
             $question = "{$rand1} - {$rand2}";
-            return GetPlayerAnswer($question, $correctAnswer);
+            return getPlayerAnswer($question, $correctAnswer);
         case "*":
             $correctAnswer = strval($rand1 * $rand2);
             $question = "{$rand1} * {$rand2}";
-            return GetPlayerAnswer($question, $correctAnswer);
+            return getPlayerAnswer($question, $correctAnswer);
     }
     return 0;
 }

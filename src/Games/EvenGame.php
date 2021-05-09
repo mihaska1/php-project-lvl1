@@ -2,16 +2,16 @@
 
 namespace Brain\Games\EvenGame;
 
-use function Brain\Games\Engine\GetPlayerAnswer;
+use function Brain\Games\Engine\getPlayerAnswer;
 
 const EVEN_GAME_RULES = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-function isEven($number)
+function isEven($number): bool
 {
     return $number % 2 === 0;
 }
 
-function BoolToYesNoFormat($bool)
+function BoolToYesNoFormat($bool): string
 {
     if ($bool === true) {
         return "yes";
@@ -21,9 +21,9 @@ function BoolToYesNoFormat($bool)
     return "none";
 }
 
-function evenGame()
+function evenGame(): bool
 {
     $randomNumber = rand(1, 300);
     $correctAnswer = BoolToYesNoFormat(isEven($randomNumber));
-    return GetPlayerAnswer($randomNumber, $correctAnswer);
+    return getPlayerAnswer($randomNumber, $correctAnswer);
 }

@@ -6,13 +6,15 @@
             "src/Cli.php",
             "src/Games/EvenGame.php",
             "src/Engine.php",
-            "src/Games/CalcGame.php"
+            "src/Games/CalcGame.php",
+            "src/Games/GcdGame.php"
         ]
     },
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
-        "bin/brain-calc"
+        "bin/brain-calc",
+        "bin/brain-gcd"
     ],
     "description": "Hexlet project",
     "authors": [
