@@ -5,11 +5,22 @@ namespace Brain\Games\Engine;
 use function Brain\Games\CalcGame\calcGame;
 use function Brain\Games\EvenGame\evenGame;
 use function Brain\Games\GcdGame\gcdGame;
+use function Brain\Games\PrimeGame\primeGame;
 use function Brain\Games\ProgressionGame\progressionGame;
 use function cli\line;
 use function cli\prompt;
 
 const NUMBER_OF_ROUNDS = 3;
+
+function boolToYesNoFormat($bool): string
+{
+    if ($bool === true) {
+        return "yes";
+    } elseif ($bool === false) {
+        return "no";
+    }
+    return "none";
+}
 
 function getPlayerAnswer($question, $correctAnswer): bool
 {
@@ -35,6 +46,8 @@ function gameMode($gameMode)
             return gcdGame();
         case "ProgressionGame":
             return progressionGame();
+        case "PrimeGame":
+            return primeGame();
     }
     return 0;
 }
