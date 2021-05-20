@@ -11,8 +11,8 @@ if (file_exists($autoloadPath1)) {
 }
 
 use function Brain\Games\Cli\greeting;
-use function Brain\Games\Engine\gameCycle;
+use function Brain\Games\Engine\runGameCycle;
 
 use const Brain\Games\GcdGame\GCD_GAME_RULES;
 
-gameCycle(greeting(), "GcdGame", GCD_GAME_RULES);
+runGameCycle(greeting(), "GcdGame", GCD_GAME_RULES);

@@ -6,7 +6,7 @@ use function Brain\Games\Engine\getPlayerAnswer;
 
 const CALC_GAME_RULES = "What is the result of the expression?";
 
-function calcGame()
+function runCalcGame()
 {
     $rand1 = rand(2, 100);
     $rand2 = rand(2, 100);

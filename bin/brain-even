@@ -11,8 +11,8 @@ if (file_exists($autoloadPath1)) {
 }
 
 use function Brain\Games\Cli\greeting;
-use function Brain\Games\Engine\gameCycle;
+use function Brain\Games\Engine\runGameCycle;
 
 use const Brain\Games\Evengame\EVEN_GAME_RULES;
 
-gameCycle(greeting(),"EvenGame",EVEN_GAME_RULES);
+runGameCycle(greeting(),"EvenGame",EVEN_GAME_RULES);

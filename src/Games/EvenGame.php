@@ -12,7 +12,7 @@ function isEven($number): bool
     return $number % 2 === 0;
 }
 
-function evenGame(): bool
+function runEvenGame(): bool
 {
     $randomNumber = rand(1, 300);
     $correctAnswer = BoolToYesNoFormat(isEven($randomNumber));

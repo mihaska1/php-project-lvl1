@@ -6,7 +6,7 @@ use function Brain\Games\Engine\getPlayerAnswer;
 
 const PROGRESSION_GAME_RULES = "What number is missing in the progression?";
 
-function progressionGame(): bool
+function runProgressionGame(): bool
 {
     $currentNumberInProgression = rand(1, 100);
     $progressionValue = rand(1, 20);

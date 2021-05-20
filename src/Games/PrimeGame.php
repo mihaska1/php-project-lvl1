@@ -22,7 +22,7 @@ function isPrime($number): bool
     return true;
 }
 
-function primeGame(): bool
+function runPrimeGame(): bool
 {
     $randomNumber = rand(1, 100);
     $question = "{$randomNumber}";

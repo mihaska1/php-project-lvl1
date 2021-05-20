@@ -2,11 +2,11 @@
 
 namespace Brain\Games\Engine;
 
-use function Brain\Games\CalcGame\calcGame;
-use function Brain\Games\EvenGame\evenGame;
-use function Brain\Games\GcdGame\gcdGame;
-use function Brain\Games\PrimeGame\primeGame;
-use function Brain\Games\ProgressionGame\progressionGame;
+use function Brain\Games\CalcGame\runCalcGame;
+use function Brain\Games\EvenGame\runEvenGame;
+use function Brain\Games\GcdGame\runGcdGame;
+use function Brain\Games\PrimeGame\runPrimeGame;
+use function Brain\Games\ProgressionGame\runProgressionGame;
 use function cli\line;
 use function cli\prompt;
 
@@ -35,28 +35,28 @@ function getPlayerAnswer($question, $correctAnswer): bool
     }
 }
 
-function gameMode($gameMode)
+function chooseGameMode($gameMode)
 {
     switch ($gameMode) {
         case "CalcGame":
-            return calcGame();
+            return runCalcGame();
         case "EvenGame":
-            return evenGame();
+            return runEvenGame();
         case "GcdGame":
-            return gcdGame();
+            return runGcdGame();
         case "ProgressionGame":
-            return progressionGame();
+            return runProgressionGame();
         case "PrimeGame":
-            return primeGame();
+            return runPrimeGame();
     }
     return 0;
 }
 
-function gameCycle($name, $gameName, $rules): bool
+function runGameCycle($name, $gameName, $rules): bool
 {
     line($rules);
     for ($i = 0; $i < NUMBER_OF_ROUNDS; $i++) {
-        if (!gameMode($gameName)) {
+        if (!chooseGameMode($gameName)) {
             line("Let's try again, %s!", $name);
             return false;
         }
