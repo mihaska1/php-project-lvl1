@@ -12,16 +12,6 @@ use function cli\prompt;
 
 const NUMBER_OF_ROUNDS = 3;
 
-function boolToYesNoFormat($bool): string
-{
-    if ($bool === true) {
-        return "yes";
-    } elseif ($bool === false) {
-        return "no";
-    }
-    return "none";
-}
-
 function getPlayerAnswer($question, $correctAnswer): bool
 {
     line("Question: {$question}");

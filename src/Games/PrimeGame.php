@@ -3,7 +3,6 @@
 namespace Brain\Games\PrimeGame;
 
 use function Brain\Games\Engine\getPlayerAnswer;
-use function Brain\Games\Engine\boolToYesNoFormat;
 
 const PRIME_GAME_RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -26,6 +25,6 @@ function runPrimeGame(): bool
 {
     $randomNumber = rand(1, 100);
     $question = "{$randomNumber}";
-    $correctAnswer = isPrime($randomNumber);
-    return getPlayerAnswer($question, boolToYesNoFormat($correctAnswer));
+    $correctAnswer = isPrime($randomNumber) ? 'yes' : 'no';
+    return getPlayerAnswer($question, $correctAnswer);
 }
