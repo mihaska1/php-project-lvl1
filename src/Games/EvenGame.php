@@ -14,6 +14,6 @@ function isEven($number): bool
 function runEvenGame(): bool
 {
     $randomNumber = rand(1, 300);
-    $correctAnswer = isEven($randomNumber) ? 'yes': 'no';
+    $correctAnswer = isEven($randomNumber) ? 'yes' : 'no';
     return getPlayerAnswer($randomNumber, $correctAnswer);
 }
